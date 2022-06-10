@@ -1,5 +1,12 @@
 
 
+## [0.3.0](https://github.com/yuliankarapetkov/github-actions/compare/0.2.0...0.3.0) (2022-06-10)
+
+
+### Features
+
+* add sample file ([9ca736c](https://github.com/yuliankarapetkov/github-actions/commit/9ca736c71ad76ddba6884b574ee527a87fad3d67))
+
 ## 0.2.0 (2022-06-10)
 
 
