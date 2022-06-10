@@ -12,4 +12,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Generate Changelog
-        run: release-it --ci
+        run: npx release-it --ci
