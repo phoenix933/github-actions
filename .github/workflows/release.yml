@@ -9,7 +9,5 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
       - name: Generate Changelog
         run: npx release-it --ci
