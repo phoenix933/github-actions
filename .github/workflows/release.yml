@@ -4,14 +4,19 @@ on: [push]
 
 env:
   TEST_ENV: ${{ secrets.TEST_ENV }}
-  NOT_SECRET: some test
+  WORKFLOW_ENV: this is a workflow env var
 
 jobs:
   test:
+    env:
+      JOB_ENV: this is a job env var
+      ANOTHER_JOB_ENV: another job env var
     name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Print test
         run: |
           echo "${TEST_ENV}"
-          echo "${NOT_SECRET}"
+          echo "${WORKFLOW_ENV}"
+          echo "${JOB_ENV}"
+          echo "${ANOTHER_JOB_ENV}"
