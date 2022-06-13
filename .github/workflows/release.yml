@@ -3,7 +3,7 @@ name: Release
 on: [push]
 
 env:
-  TEST_ENV: test
+  TEST_ENV: ${{ secrets.TEST_ENV }}
 
 jobs:
   test:
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "${{ TEST_ENV }}"
+        run: echo "${TEST_ENV}"
