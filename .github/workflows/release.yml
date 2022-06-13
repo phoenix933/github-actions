@@ -2,12 +2,20 @@ name: Release
 
 on: [push]
 
+# jobs:
+#   release:
+#     name: Release
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout branch
+#         uses: actions/checkout@v2
+#       - name: Generate Changelog
+#         run: npx release-it --ci
+
 jobs:
-  release:
-    name: Release
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
-        uses: actions/checkout@v2
-      - name: Generate Changelog
-        run: npx release-it --ci
+      - name: Print test
+        run: console.log("test it")
