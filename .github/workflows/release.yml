@@ -8,11 +8,11 @@ env:
 
 jobs:
   test:
+    name: Test
+    runs-on: ubuntu-latest
     env:
       JOB_ENV: this is a job env var
       ANOTHER_JOB_ENV: another job env var
-    name: Test
-    runs-on: ubuntu-latest
     steps:
       - name: Print test
         run: |
