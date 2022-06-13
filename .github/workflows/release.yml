@@ -2,6 +2,9 @@ name: Release
 
 on: [push]
 
+env: 
+  TEST_ENV: ${{ secrets.TEST_ENV }}
+
 # jobs:
 #   release:
 #     name: Release
@@ -18,4 +21,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "test"
+        run: echo "${{ TEST_ENV }}"
