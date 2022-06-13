@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Print test
         run: |
-        echo "${TEST_ENV}"
-        echo "${NOT_SECRET}"
+          echo "${TEST_ENV}"
+          echo "${NOT_SECRET}"
