@@ -2,18 +2,8 @@ name: Release
 
 on: [push]
 
-env: 
-  TEST_ENV: ${{ secrets.TEST_ENV }}
-
-# jobs:
-#   release:
-#     name: Release
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout branch
-#         uses: actions/checkout@v2
-#       - name: Generate Changelog
-#         run: npx release-it --ci
+env:
+  TEST_ENV: test
 
 jobs:
   test:
