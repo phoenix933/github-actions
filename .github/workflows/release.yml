@@ -4,6 +4,7 @@ on: [push]
 
 env:
   TEST_ENV: ${{ secrets.TEST_ENV }}
+  NOT_SECRET: some test
 
 jobs:
   test:
@@ -11,4 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print test
-        run: echo "${TEST_ENV}"
+        run: |
+        echo "${TEST_ENV}"
+        echo "${NOT_SECRET}"
