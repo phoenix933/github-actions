@@ -1,5 +1,7 @@
 name: Release
 
+# useless comment
+
 on: [push]
 
 env:
